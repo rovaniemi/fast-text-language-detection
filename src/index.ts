@@ -239,6 +239,9 @@ function formatInput(text: string) {
 
 /*  the API class  */
 class LanguageDetection {
+  options: { model: any }
+  classifier: any
+  languageIsoCodes: string[]
   constructor(options = {}) {
     this.options = Object.assign(
       {},
